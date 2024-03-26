@@ -469,6 +469,7 @@ transition: background-color 0.3s, border-color 0.3s; /* Transições suaves */
     #lv {
 letter-spacing: 1.8px;
 text-decoration: none;
+color: #585858;
     }
     .menu-container2 {
             position: fixed;
@@ -566,7 +567,7 @@ text-decoration: none;
 </head>
 <body>
     <header>
-        <a href="file:///C:/Users/User/Downloads/Jornal/jornal.html?#"><h1 id="lv">JORNAL SF</h1></a>
+        <h1 id="lv" onclick="window.location.href='file:///C:/Users/User/Downloads/Jornal/jornal.html?#'">JORNAL SF</h1>
         <span id="login" onclick="toggleMenu1()" onmouseenter="this.style.cursor='pointer'">
             <i class="fas fa-user fa-lg"></i> <!-- Tamanho duas vezes maior -->
         </span>
@@ -807,8 +808,15 @@ function validateCredentials() {
     // Se o login e a senha estiverem corretos, o formulário pode ser enviado
     return true;
 }
-
+document.getElementById('lv').addEventListener('click', function(event) {
+    // Evita a propagação do evento de clique
+    event.stopPropagation();
+    
+    // Redireciona para o link apenas quando o título é clicado
+    window.location.href = 'file:///C:/Users/User/Downloads/Jornal/jornal.html?#';
+  });
 </script>
     
 </body>
 </html>
+
