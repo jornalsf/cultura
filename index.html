@@ -104,7 +104,7 @@
         .menu-container1 {
     position: fixed;
     top: 0;
-    right: -690px;
+    right: -960px;
     width: 50%;
     height: 100%;
     background-color: #ffffff;
@@ -190,7 +190,7 @@
 }
         .menu-button {
             position: fixed;
-            top: 6%;
+            top: 5%;
             left: 3.3%;
             cursor: pointer;
             z-index: 999;
@@ -271,7 +271,7 @@
     width: 1rem;
     position: absolute;
     right: 8%;
-    top: 6%;
+    top: 5%;
 }
 
         body.overlay {
@@ -546,22 +546,22 @@ cursor: pointer;
 
         #page {
             position: absolute;
-            left: 7rem;
-            top: 5.5rem;
-            font-size: 15px;
+            left: 10rem;
+            top: 10rem;
+            font-size: 17px;
             letter-spacing: .10rem;
         }
 
         #titulo1 {
             position: absolute;
-            right: 30rem;
-            top: 15rem;
+            right: 42rem;
+            top: 19rem;
         }
         #imagempascoa {
             position: absolute;
-            left: 3rem;
-            top: 10rem;
-            width: 450px;
+            left: 15rem;
+            top: 18rem;
+            width: 620px;
         }
 
 </style>
@@ -787,7 +787,7 @@ function closeMenu1() {
     var menu1 = document.getElementById("menu1");
     var closeButton = document.getElementById("close-menu");
 
-    menu1.style.right = "-690px"; // Fecha o menu-container1
+    menu1.style.right = "-960px"; // Fecha o menu-container1
     body.classList.remove("overlay");
     menu1.classList.remove("open");
     closeButton.style.display = "none"; // Oculta o botão "X"
